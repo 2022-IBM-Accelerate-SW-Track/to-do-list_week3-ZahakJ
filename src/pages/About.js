@@ -1,31 +1,28 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
-
+import avicenna from "../assets/Avicenna.jpg";
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
-        <div class="split left">
-          <div className="centered">
-            <img
-              className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
+      <div class="split left">
+        <div className="centered">
+          <img 
+            className="profile_image"
+            src= {avicenna}
+            alt="Profile Pic"
             ></img>
-          </div>
         </div>
-        <div className="split right">
-          <div className="centered">
-            <div className="name_title">Your Name</div>
-            <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
-            </div>
+      </div>
+      <div className="split right">
+        <div className="centered">
+          <div className="name_title">Avicenna</div>
+          <div className="brief_description">
+            I am Avicenna, an old Persian polymath! I am, very humbly, considered to be the father of modern medicine and the second Aristotle of the world. I have written a lot about philosophy and medicine, and I have done multiple studies in physical sciences and language. It is a pleasure to be here learning some Web Dev from IBM!
           </div>
         </div>
       </div>
-    );
+    </div>
+    )
   }
 }
